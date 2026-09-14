@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int size, int key) {
+int searchRange(int arr[], int size, int key) {
     int start = 0;
     int end = size-1;
 
@@ -29,10 +29,10 @@ int main() {
     int even[6] = {2, 4, 6, 8, 10, 26};
     int odd[5] = {3, 5, 9, 13, 21};
 
-    int Evenindex = binarySearch(even, 6, 10);
+    int Evenindex = searchRange(even, 6, 10);
     cout << "Index of 10 is " << Evenindex << endl;
 
-    int Oddindex = binarySearch(odd, 5, 13);
+    int Oddindex = searchRange(odd, 5, 13);
     cout << "Index of 13 is " << Oddindex << endl;
 
     return 0;
