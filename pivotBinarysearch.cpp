@@ -10,7 +10,7 @@ int getpivot(int arr[], int n)
 
     while (start < end)
     {
-        if (arr[mid] <= arr[0])
+        if (arr[mid] >= arr[0])
         {
             start = mid + 1;
         }
@@ -25,7 +25,7 @@ int getpivot(int arr[], int n)
 
 int main()
 {
-    int arr[5] = {3, 8, 10, 17, 1};
+    int arr[5] = {8, 10, 17, 1, 3};
 
     cout << "Pivot rotation index is " << getpivot(arr, 5) << endl;
 }
